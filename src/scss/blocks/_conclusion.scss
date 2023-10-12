@@ -1,0 +1,17 @@
+.conclusion {
+	padding: 30px 0 50px;
+
+	&__text {
+		display: flex;
+		flex-direction: column;
+		gap: 9px;
+	}
+
+	&__p {
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 150%; /* 21px */
+		letter-spacing: 0.14px;
+	}
+}
