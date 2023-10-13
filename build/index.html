@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Стартовый шаблон</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Onest&display=swap" rel="stylesheet" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css"
+		/>
+		<link rel="stylesheet" href="./css/main.css" />
+	</head>
+	<body>
+		<header class="header">
+	<div class="container">
+		<div class="header__row">
+			<div class="logo"><img src="../../img/logo.svg" alt="" /></div>
+			<div class="header__nav">
+				<ul class="header__ul">
+					<li class="header__li">Статьи</li>
+					<li class="header__li">Курсы</li>
+					<li class="header__li">Новости</li>
+					<li class="header__li">О нас</li>
+				</ul>
+			</div>
+			<button class="header__button button" type="button">Начать учиться</button>
+			<button class="mobile-nav-btn">
+				<img src="../../img/menu.svg" alt="" />
+			</button>
+		</div>
+	</div>
+</header>
+<div class="mobile-nav">
+	<ul class="mobile-nav__list">
+		<li><a href="#">Статьи</a></li>
+		<li><a href="#">Курсы</a></li>
+		<li><a href="#">Новости</a></li>
+		<li><a href="#">О нас</a></li>
+	</ul>
+</div>
+
+
+		<main>
+			<section class="hero">
+	<div class="container">
+		<div class="hero__text">
+			<h1 class="hero__title">Путь JavaScript</h1>
+			<p class="hero__subtitle hero__subtitle-mobile">
+				Можно выделить три основных направления для&nbsp;прогресса JavaScript&nbsp;Middle...
+			</p>
+		</div>
+		<div class="slider">
+			<img class="slider__img" src="../../img/catalog.png" alt="" />
+			<p class="hero__subtitle hero__subtitle-desktop">
+				Можно выделить три основных направления для&nbsp;прогресса JavaScript&nbsp;Middle...
+			</p>
+		</div>
+	</div>
+</section>
+ <section class="server-side">
+	<div class="container">
+		<div class="server-side__wrapper">
+			<h2 class="server-side__heading heading">Серверный JavaScript</h2>
+			<div class="quotation"><img src="../../img/quotation.svg" alt="" /></div>
+			<blockquote class="blockquote">
+				<div class="blockquote__text">
+					<p class="blockquote__p">
+						Разработчики и клиенты часто неправильно понимают, что такое система. Они видят
+						графический интерфейс и думают, что он и есть система. Они определяют систему в терминах
+						графического интерфейса и считают, что должны сразу начать работу с графическим
+						интерфейсом. Они не понимают важнейшего принципа: ввод/вывод не важен.
+					</p>
+					<footer class="blockquote__footer">— Р. Мартин</footer>
+				</div>
+			</blockquote>
+		</div>
+	</div>
+</section>
+ <section class="ad">
+	<div class="container">
+		<div class="ad__wrapper">
+			<figure class="ad__figure">
+				<picture>
+					<source srcset="../../img/ad.png" media="(min-width: 768px)" />
+					<img class="ad__img" src="../../img/ad_mobile.png" alt="" />
+				</picture>
+				<figcaption class="ad__figcaption">
+					Реклама на <a class="ad__link" href="#">blabla.com</a>
+				</figcaption>
+			</figure>
+		</div>
+	</div>
+</section>
+
+			<section class="conclusion">
+	<div class="container">
+		<div class="conclusion__text">
+			<h2 class="conclusion__heading heading">Заключение</h2>
+			<p class="conclusion__p">
+				Синхрония осознаёт сюжетный верлибр. Мифопорождающее текстовое устройство диссонирует
+				лирический субъект. Абстрактное высказывание пространственно просветляет деструктивный
+				символ. Ямб, несмотря на то, что все эти характерологические черты отсылают не к единому
+				образу нарратора, интегрирует мифопоэтический хронотоп. Действительно, ударение приводит
+				палимпсест. Контрапункт приводит ритм.
+			</p>
+		</div>
+	</div>
+</section>
+<section class="feedback">
+	<div class="container">
+		<div class="feedback__wrapper">
+			<h2 class="feedback__heading heading-big">
+				Что вы думаете <br />
+				об этой книге?
+			</h2>
+			<form class="feedback__form" action="#">
+				<fieldset class="rating">
+					<legend class="rating__legend legend">Оцените статью</legend>
+					<div class="rating__wrapper">
+						<p class="rating__selected"><span id="selectedValue">4</span></p>
+						<div class="stars">
+							<div class="stars__items">
+								<input class="stars__item" type="radio" name="stars" id="stars__5" value="5" />
+								<label for="stars__5" class="stars__label"></label>
+								<input
+									class="stars__item"
+									type="radio"
+									name="stars"
+									id="stars__4"
+									value="4"
+									checked
+								/>
+								<label for="stars__4" class="stars__label"></label>
+								<input class="stars__item" type="radio" name="stars" id="stars__3" value="3" />
+								<label for="stars__3" class="stars__label"></label>
+								<input class="stars__item" type="radio" name="stars" id="stars__2" value="2" />
+								<label for="stars__2" class="stars__label"></label>
+								<input class="stars__item" type="radio" name="stars" id="stars__1" value="1" />
+								<label for="stars__1" class="stars__label"></label>
+							</div>
+						</div>
+					</div>
+				</fieldset>
+				<fieldset class="fields">
+					<legend class="fields__legend legend">Добавить комментарий к книге</legend>
+					<div class="fields__group">
+						<input required class="fields__input" placeholder="Имя" type="text" name="Name" id="" />
+						<label for="" class="fields__label">Имя</label>
+					</div>
+					<div class="fields__group">
+						<input
+							required
+							class="fields__input"
+							placeholder="Email"
+							type="email"
+							name="Email"
+							id=""
+						/>
+						<label for="" class="fields__label">Email</label>
+					</div>
+					<select required class="fields__select js-choice">
+						<option value="" placeholder>Выберите книгу</option>
+						<option value="1">JavaScript ниндзя</option>
+						<option value="2">Pragmatic Guide to JavaScript</option>
+						<option value="3">Pro JavaScript Techniques</option>
+						<option value="4">Выразительный JavaScript</option>
+					</select>
+					<textarea required placeholder="Ваш отзыв" class="fields__textarea"></textarea>
+				</fieldset>
+				<button class="submit-btn button" type="submit">Отправить</button>
+			</form>
+		</div>
+	</div>
+</section>
+<section class="slider">
+	<div class="slider__wrapper">
+		<div class="container">
+			<h2 class="slider__heading heading-big">Похожие посты</h2>
+		</div>
+		<div class="swiper">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<a href="#" class="card">
+						<img src="../../img/react-icon.png" alt="" class="card__img" />
+						<div class="card__text">
+							<time class="card__date" datetime="2023-12-12">12 декабря</time>
+							<p class="card__title">События жизненного цикла ReactJS</p>
+						</div>
+					</a>
+				</div>
+				<div class="swiper-slide">
+					<a href="#" class="card">
+						<img src="../../img/react-icon.png" alt="" class="card__img" />
+						<div class="card__text">
+							<time class="card__date" datetime="2023-12-12">12 декабря</time>
+							<p class="card__title">События жизненного цикла ReactJS</p>
+						</div>
+					</a>
+				</div>
+				<div class="swiper-slide">
+					<a href="#" class="card">
+						<img src="../../img/react-icon.png" alt="" class="card__img" />
+						<div class="card__text">
+							<time class="card__date" datetime="2023-12-12">12 декабря</time>
+							<p class="card__title">События жизненного цикла ReactJS</p>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="swiper-pagination"></div>
+	</div>
+</section>
+
+		</main>
+
+		<script src="./js/index.bundle.js"></script>
+	</body>
+</html>
