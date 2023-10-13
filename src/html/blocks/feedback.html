@@ -1,0 +1,66 @@
+<section class="feedback">
+	<div class="container">
+		<div class="feedback__wrapper">
+			<h2 class="feedback__heading">
+				Что вы думаете <br />
+				об этой книге?
+			</h2>
+			<form class="feedback__form" action="#">
+				<fieldset class="rating">
+					<legend class="rating__legend legend">Оцените статью</legend>
+					<div class="rating__wrapper">
+						<p class="rating__selected"><span id="selectedValue">4</span></p>
+						<div class="stars">
+							<div class="stars__items">
+								<input class="stars__item" type="radio" name="stars" id="stars__5" value="5" />
+								<label for="stars__5" class="stars__label"></label>
+								<input
+									class="stars__item"
+									type="radio"
+									name="stars"
+									id="stars__4"
+									value="4"
+									checked
+								/>
+								<label for="stars__4" class="stars__label"></label>
+								<input class="stars__item" type="radio" name="stars" id="stars__3" value="3" />
+								<label for="stars__3" class="stars__label"></label>
+								<input class="stars__item" type="radio" name="stars" id="stars__2" value="2" />
+								<label for="stars__2" class="stars__label"></label>
+								<input class="stars__item" type="radio" name="stars" id="stars__1" value="1" />
+								<label for="stars__1" class="stars__label"></label>
+							</div>
+						</div>
+					</div>
+				</fieldset>
+				<fieldset class="fields">
+					<legend class="fields__legend legend">Добавить комментарий к книге</legend>
+					<div class="fields__group">
+						<input required class="fields__input" placeholder="Имя" type="text" name="Name" id="" />
+						<label for="" class="fields__label">Имя</label>
+					</div>
+					<div class="fields__group">
+						<input
+							required
+							class="fields__input"
+							placeholder="Email"
+							type="email"
+							name="Email"
+							id=""
+						/>
+						<label for="" class="fields__label">Email</label>
+					</div>
+					<select required class="fields__select js-choice">
+						<option value="" placeholder>Выберите книгу</option>
+						<option value="1">JavaScript ниндзя</option>
+						<option value="2">Pragmatic Guide to JavaScript</option>
+						<option value="3">Pro JavaScript Techniques</option>
+						<option value="4">Выразительный JavaScript</option>
+					</select>
+					<textarea required placeholder="Ваш отзыв" class="fields__textarea"></textarea>
+				</fieldset>
+				<button class="submit-btn" type="submit">Отправить</button>
+			</form>
+		</div>
+	</div>
+</section>
