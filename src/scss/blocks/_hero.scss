@@ -1,6 +1,10 @@
 .hero {
 	padding: 22px 0 50px;
 
+	@media (width >= 768px) {
+		padding: 120px 0 25px;
+	}
+
 	&__text {
 		display: flex;
 		flex-direction: column;
@@ -13,6 +17,10 @@
 		font-weight: 600;
 		line-height: 38px;
 		letter-spacing: -0.2px;
+
+		@media (width >= 768px) {
+			font-size: 52px;
+		}
 	}
 
 	&__subtitle {
@@ -20,6 +28,20 @@
 		font-style: normal;
 		font-weight: 400;
 		line-height: 20px; /* 142.857% */
+	}
+
+	&__subtitle-desktop {
+		display: none;
+	}
+
+	@media (width >= 768px) {
+		&__subtitle-mobile {
+			display: none;
+		}
+
+		&__subtitle-desktop {
+			display: block;
+		}
 	}
 }
 
@@ -45,6 +67,11 @@
 
 	&__img {
 		max-width: none;
-		max-height: 347px;
+		max-height: 266px;
+		object-fit: cover;
+		@media (width >= 768px) {
+			width: 100%;
+			max-height: 330px;
+		}
 	}
 }
