@@ -2,8 +2,16 @@
 	background-color: #f1f1f3;
 	padding: 22px 0 50px;
 
+	@media (width >= 768px) {
+		padding: 53px 0 88px;
+	}
+
 	&__heading {
 		margin-bottom: 28px;
+
+		@media (width >= 768px) {
+			margin-bottom: 37px;
+		}
 	}
 
 	&__form {
@@ -26,6 +34,10 @@
 	flex-direction: column;
 	gap: 8px;
 	margin-bottom: 32px;
+
+	@media (width >= 768px) {
+		margin-bottom: 43px;
+	}
 
 	&__legend {
 		margin-bottom: 3px;
@@ -112,56 +124,24 @@
 		margin-bottom: 12px;
 	}
 
-	&__group {
-		position: relative;
-	}
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+		gap: 12px;
 
-	&__input {
-		width: 100%;
-		padding: 17px 15px;
-		border-radius: 10px;
-		border: 1px solid #ededf1;
-		background: #fff;
-		font-size: 14px;
-		font-style: normal;
-		font-weight: 400;
-		line-height: 15px; /* 107.143% */
-	}
+		@media (width >= 768px) {
+			flex-direction: row;
+			width: 100%;
 
-	&__label {
-		position: absolute;
-		margin-left: 15px;
-		top: 50%;
-		left: 0;
-		transform: translateY(-50%);
-		color: #777;
-		font-size: 14px;
-		font-style: normal;
-		font-weight: 400;
-		line-height: 15px; /* 107.143% */
-		pointer-events: none;
-	}
+			> * {
+				flex: 1; /* Дает каждому элементу равное пространство */
+				margin-right: 10px; /* Отступ между элементами */
+			}
 
-	&__input:focus + &__label {
-		margin-top: -15px;
-		margin-left: 15px;
-		font-size: 9px;
-		transition: all 0.1s ease;
-	}
-
-	&__input:not(:placeholder-shown) + &__label {
-		margin-top: -15px;
-		margin-left: 15px;
-		font-size: 9px;
-	}
-
-	*::placeholder {
-		opacity: 0;
-		color: #777;
-		font-size: 14px;
-		font-style: normal;
-		font-weight: 400;
-		line-height: 15px; /* 107.143% */
+			> *:last-child {
+				margin-right: 0; /* Убирает отступ у последнего элемента */
+			}
+		}
 	}
 
 	&__select {
@@ -181,13 +161,19 @@
 		font-weight: 400;
 		line-height: 15px; /* 107.143% */
 		resize: none;
+
+		@media (width >= 768px) {
+			max-height: 146px;
+		}
 	}
+
 	&__textarea::placeholder {
 		opacity: 1;
 	}
 }
 
 .choices {
+	width: 100%;
 	margin-bottom: 0;
 
 	&__inner {
@@ -235,9 +221,19 @@
 			top: 0;
 		}
 	}
+
+	&__list--single {
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
 }
 
 .submit-btn {
-	margin-top: 22px;
+	margin-top: 14px;
 	width: 100%;
+
+	@media (width >= 768px) {
+		max-width: 133px;
+		margin-top: 17px;
+	}
 }

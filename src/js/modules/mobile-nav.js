@@ -11,4 +11,12 @@ function mobileNav() {
 	};
 }
 
-export default mobileNav;
+function closeMobileNav() {
+	const nav = document.querySelector('.mobile-nav');
+	const menuIcon = document.querySelector('.nav-icon');
+	nav.classList.remove('mobile-nav--open');
+	menuIcon.classList.remove('nav-icon--active');
+	document.body.classList.remove('no-scroll');
+}
+
+export { mobileNav, closeMobileNav };

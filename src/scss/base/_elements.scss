@@ -4,6 +4,12 @@
 	font-weight: 500;
 	line-height: 30px; /* 136.364% */
 	letter-spacing: -0.22px;
+
+	@media (width >= 768px) {
+		font-size: 28px;
+		line-height: 36px; /* 128.571% */
+		letter-spacing: -0.56px;
+	}
 }
 
 .heading-big {
@@ -12,6 +18,12 @@
 	font-weight: 500;
 	line-height: 32px; /* 114.286% */
 	letter-spacing: -0.28px;
+
+	@media (width >= 768px) {
+		font-size: 40px;
+		line-height: 36px; /* 90% */
+		letter-spacing: -0.8px;
+	}
 }
 
 .button {
@@ -29,4 +41,61 @@
 	font-style: normal;
 	font-weight: 500;
 	line-height: 18px; /* 128.571% */
+	transition: background-color 0.2s ease;
+
+	&:hover {
+		background-color: #6d5fb4;
+	}
+}
+
+.animated-input {
+	width: 100%;
+	padding: 17px 15px;
+	border-radius: 10px;
+	border: 1px solid #ededf1;
+	background: #fff;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 15px; /* 107.143% */
+
+	&:focus + &-label {
+		margin-top: -15px;
+		margin-left: 15px;
+		font-size: 9px;
+		transition: all 0.1s ease;
+	}
+
+	&__input:not(:placeholder-shown) + &-label {
+		margin-top: -15px;
+		margin-left: 15px;
+		font-size: 9px;
+	}
+
+	&-label {
+		position: absolute;
+		margin-left: 15px;
+		top: 50%;
+		left: 0;
+		transform: translateY(-50%);
+		color: #777;
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 15px; /* 107.143% */
+		pointer-events: none;
+	}
+
+	&-group {
+		position: relative;
+	}
+
+	&::placeholder {
+		opacity: 0;
+		color: #777;
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 15px; /* 107.143% */
+	}
 }

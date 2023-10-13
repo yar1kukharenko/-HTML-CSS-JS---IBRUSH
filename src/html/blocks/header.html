@@ -1,18 +1,32 @@
 <header class="header">
 	<div class="container">
 		<div class="header__row">
-			<div class="logo"><img src="../../img/logo.svg" alt="" /></div>
+			<div class="logo"><img src="../img/logo.svg" alt="" /></div>
 			<div class="header__nav">
 				<ul class="header__ul">
-					<li class="header__li">Статьи</li>
-					<li class="header__li">Курсы</li>
-					<li class="header__li">Новости</li>
-					<li class="header__li">О нас</li>
+					<li class="header__li">
+						<a class="header__link" href="#">Статьи</a>
+						<ul class="submenu">
+							<li><a href="#">JavaScript Pro</a></li>
+							<li><a href="#">JavaScript для новчиков</a></li>
+							<li><a href="#">JavaScript ниндзя</a></li>
+						</ul>
+					</li>
+					<li class="header__li">
+						<a class="header__link" href="#">Курсы</a>
+						<ul class="submenu">
+							<li><a href="#">JavaScript Pro</a></li>
+							<li><a href="#">JavaScript для новчиков</a></li>
+							<li><a href="#">JavaScript ниндзя</a></li>
+						</ul>
+					</li>
+					<li class="header__li"><a class="header__link" href="#">Новости</a></li>
+					<li class="header__li"><a class="header__link" href="#">О нас</a></li>
 				</ul>
 			</div>
-			<button class="header__button button" type="button">Начать учиться</button>
+			<button class="header__button button showPopup" type="button">Начать учиться</button>
 			<button class="mobile-nav-btn">
-				<img src="../../img/menu.svg" alt="" />
+				<img src="../img/menu.svg" alt="" />
 			</button>
 		</div>
 	</div>

@@ -1,0 +1,10 @@
+.logo {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+
+	@media (width >= 768px) {
+		width: 160px;
+		height: 20.899px;
+	}
+}

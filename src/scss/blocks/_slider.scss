@@ -1,10 +1,28 @@
 .slider {
 	padding: 30px 0 66px;
+
+	@media (width >= 767px) {
+		padding: 60px 0 101px;
+	}
+
 	&__wrapper {
 		position: relative;
 	}
+
 	&__heading {
 		margin-bottom: 19px;
+
+		@media (width >= 786px) {
+			margin-bottom: 32px;
+		}
+	}
+
+	&__container {
+		padding: 0;
+
+		@media (width >= 786px) {
+			padding: 0 13.96vw;
+		}
 	}
 }
 
@@ -18,8 +36,13 @@
 	gap: 12px;
 	margin: 0 auto;
 
+	@media (width >= 768px) {
+		max-width: 226px;
+	}
+
 	&__img {
 		border-radius: 23px;
+		transition: box-shadow 0.2s ease;
 	}
 
 	&__text {
@@ -43,6 +66,10 @@
 		font-weight: 500;
 		line-height: 22px; /* 137.5% */
 		max-width: 80%;
+	}
+
+	&:hover > &__img {
+		box-shadow: 0 18px 60px 0 rgb(0 0 0 / 25%);
 	}
 }
 
