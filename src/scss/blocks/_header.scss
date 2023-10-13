@@ -14,7 +14,7 @@
 	&__nav {
 		display: none;
 
-		@media (width >= 768px) {
+		@media ('min-width: 768px') {
 			width: 100%;
 			display: flex;
 			justify-content: center;
@@ -92,7 +92,8 @@
 	&__button {
 		display: none;
 		height: 37px;
-		@media (width >= 768px) {
+
+		@media ('min-width: 768px') {
 			display: flex;
 		}
 	}

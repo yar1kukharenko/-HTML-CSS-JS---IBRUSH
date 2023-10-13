@@ -1,7 +1,7 @@
 .conclusion {
 	padding: 30px 0 50px;
 
-	@media (width >= 768px) {
+	@media ('min-width: 768px') {
 		padding: 50px 0 80px;
 	}
 
@@ -10,7 +10,7 @@
 		flex-direction: column;
 		gap: 9px;
 
-		@media (width >= 768px) {
+		@media ('min-width: 768px') {
 			gap: 17px;
 		}
 	}
@@ -22,7 +22,7 @@
 		line-height: 150%; /* 21px */
 		letter-spacing: 0.14px;
 
-		@media (width >= 768px) {
+		@media ('min-width: 768px') {
 			font-size: 16px;
 			line-height: 160%; /* 25.6px */
 			letter-spacing: 0.16px;

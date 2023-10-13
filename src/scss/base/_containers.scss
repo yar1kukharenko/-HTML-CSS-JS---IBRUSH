@@ -3,7 +3,7 @@
 	max-width: var(--container-width);
 	margin: 0 auto;
 
-	@media (width >= 768px) {
+	@media ('min-width: 768px') {
 		padding: 0 13.96vw;
 	}
 }

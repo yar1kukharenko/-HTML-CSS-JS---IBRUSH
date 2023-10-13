@@ -14,7 +14,7 @@
 		margin: 0 auto;
 		max-width: 610px;
 
-		@media (width >= 768px) {
+		@media ('min-width: 768px') {
 			padding: 87px 0 73px;
 		}
 	}
@@ -22,7 +22,7 @@
 	&__img {
 		width: auto;
 
-		@media (width >= 768px) {
+		@media ('min-width: 768px') {
 			width: 100%;
 			object-fit: cover;
 			max-height: 246px;

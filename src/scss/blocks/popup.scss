@@ -45,7 +45,7 @@
 		flex-direction: column;
 		gap: 10px;
 
-		@media (width >= 768px) {
+		@media ('min-width: 768px') {
 			gap: 8px;
 		}
 	}
